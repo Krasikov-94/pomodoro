@@ -6,3 +6,12 @@
 // three.scrollIntoView();
 // const four = document.getElementById('four-block');
 // four.scrollIntoView();
+
+let faqs = document.querySelectorAll(".faq")
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+}
+)

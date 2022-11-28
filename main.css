@@ -161,7 +161,65 @@ h1 {
     font-size: 32px;
 }
 
+/* faq */
 
+
+.faq h3 {
+    font-family: 'Roboto Flex';
+    font-size: 1.4rem;
+
+}
+.faq h2 {
+
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq p {
+    font-family: 'Roboto Flex';
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    
+}
+.faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 140px;
+}
+
+.faq.active .answer {
+    max-height: max-content;
+    animation: fade 1.4s ease-in-out;
+
+}
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: (0px);
+    }
+}
 
 
 
